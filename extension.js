@@ -33,7 +33,7 @@
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Pobierz  wtyczkę rcs, aby w pełni korzystać z uroków pokoju! :) ");
+              API.sendChat("/me Pobierz  wtyczkę rcs, aby w pełni korzystać z uroków pokoju! :) https://rcs.radiant.dj/ ");
             }
           }
         };
