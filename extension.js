@@ -26,14 +26,14 @@
 
         // Example code for a bot command:
         bot.commands.baconCommand = {
-          command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+          command: 'rcs',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Bacon!!!");
+              API.sendChat("/me Pobierz  wtyczkę rcs, aby w pełni korzystać z uroków pokoju! :) ");
             }
           }
         };
@@ -78,13 +78,13 @@
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
-      ["theme", "This song does not fit the room theme. "],
+      ["theme", "Ta piosenka nie pasuje do tematyki pokoju. "],
       ["op", "This song is on the OP list. "],
-      ["history", "This song is in the history. "],
-      ["mix", "You played a mix, which is against the rules. "],
-      ["sound", "The song you played had bad sound quality or no sound. "],
-      ["nsfw", "The song you contained was NSFW (image or sound). "],
-      ["unavailable", "The song you played was not available for some users. "]
+      ["history", "Ta piosenka jest w historii. "],
+      ["mix", "Grałeś mix, który jest sprzeczny z zasadami. "],
+      ["sound", "Piosenka, którą grałeś miała złą jakość dźwięku lub była bez dźwięku. "],
+      ["nsfw", "Zdjęcia/nagrania zawierające treści, które mogą urazić inne osoby. "],
+      ["unavailable", "Utwór, który grałeś nie był dostępny dla wszystkich użytkowników. "]
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
