@@ -46,20 +46,20 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
-      language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
+      botName: "Bot",
+      language: "polski",
+      chatLink: "https://rawgit.com/Baxy99/custom/master/lang/pl.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
-      startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupCap: 200, // 1-200
+      startupVolume: 60, // 0-100
+      startupEmoji: true, // true or false
       autowoot: true,
-      autoskip: false,
+      autoskip: true,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -70,7 +70,7 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
@@ -105,9 +105,9 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/Baxy99/custom/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/Baxy99/custom/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/Baxy99/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
